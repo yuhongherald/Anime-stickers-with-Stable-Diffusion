@@ -231,3 +231,7 @@ The LoRA was trained for **8 epochs** using a **cosine annealing with warm resta
 A **low learning rate of $1×10^{-5}$** was chosen to prevent overfitting and ensure that the LoRA adjusts the base model gently, preserving the original model’s learned features while fine-tuning for the target character.
 
 This combination of **multiple epochs, warm restart cycles**, and a **conservative learning rate** strikes a balance between learning the new character features and maintaining model generality.
+
+## Credits
+
+A special thank you to Haofeng, Hui Qi, and Yong Ann for researching Stable Diffusion and LoRAs with me; to Gustinex for the animated stickers; to Phainon on TensorArt for his benchmark model; and last but not least, to Hoyolabs for the amazing official in-game and sticker art!

@@ -178,7 +178,7 @@ During initial training, a few flaws were noted. We will discuss what causes the
 | :----------------- | :----------- | :----------- | :--------- |
 | Generated image    | <img src="img/aventurine_crystal.png" alt="Aventurine" width="200"/> | <img src="img/hsr_fusion.png" alt="HSR fusion" width="200"/> | <img src="img/evil_clone.png" alt="Evil clone" width="200"/> |
 | Caused by          | Tags clashing with common tags | Universal tags in training data | Small number of training data |
-| Why does it happen | <p style="width: 200px">Model already learned weights for tag and has to unlearn them</p> | <p style="width: 200px">Model performs gradient updates more often for these tags, causing them to learn the "average" features</p> | Memorizing training data |
+| Why does it happen | <p style="width: 200px">Model already learned weights for tag and has to unlearn them</p> | <p style="width: 200px">Model performs gradient updates more often for these tags, causing them to learn the "average" features</p> | <p style="width: 200px">Memorizing training data</p> |
 | Corrective action  | Use customized tags | - Avoid universal tags<br>- Use tag weights | - Increase diversity of training data<br>- Early stopping |
 
 ## Final adopted training strategy
@@ -234,4 +234,15 @@ This combination of **multiple epochs, warm restart cycles**, and a **conservati
 
 ## Credits
 
-A special thank you to Haofeng, Hui Qi, and Yong Ann for researching Stable Diffusion and LoRAs with me; to Gustinex for the animated stickers; to Phainon on TensorArt for his benchmark model; and last but not least, to Hoyolabs for the amazing official in-game and sticker art!
+<table>
+  <tr>
+    <td style="vertical-align: top">
+      A special thank you to Haofeng, Hui Qi, and Yong Ann for researching Stable Diffusion and LoRAs with me;
+      to Gustinex for the animated stickers; to Phainon on TensorArt for his benchmark model;
+      and last but not least, to Hoyolabs for the amazing official in-game and sticker art!
+    </td>
+    <td style="width: 200px">
+      <img src="img/aventurine_cheer.png" alt="Aventurine cheer" width="200"/>
+    </td>
+  </tr>
+</table>
